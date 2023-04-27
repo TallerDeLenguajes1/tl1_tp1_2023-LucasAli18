@@ -14,9 +14,14 @@ que el resultado es el mismo. ¿a qué se debe? ¿Qué obtiene en el
 punto 4? ¿Es igual a los anteriores? ¿Por qué? Responder en el archivo
 readme.md
 */
+
+int cuadrado(int num) {
+    return num * num;
+}
+
 void main(){
 
-    int* p, x;
+    int* p, x,n;
     x=10;
     p = &x;
 
@@ -25,6 +30,5 @@ void main(){
     printf("\nLa dirección de memoria de la variable. %p",&x);
     printf("\nLa dirección de memoria del puntero. %p",&p);
     printf("\nEl tamaño de memoria utilizado por esa variable usando la función sizeof %d",sizeof(x));
-
 
 }
