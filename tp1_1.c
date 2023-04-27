@@ -7,13 +7,24 @@ variable de algún tipo y muestre por pantalla lo siguiente:
 3) la dirección de memoria de la variable.
 4) la dirección de memoria del puntero.
 5) el tamaño de memoria utilizado por esa variable usando la
-función sizeof()*/
+función sizeof()
+f) Hacer el segundo commit del archivo y subirlo a la plataforma
+g) Si resolvió correctamente los apartados 2 y 3 del punto anterior notará
+que el resultado es el mismo. ¿a qué se debe? ¿Qué obtiene en el
+punto 4? ¿Es igual a los anteriores? ¿Por qué? Responder en el archivo
+readme.md
+*/
 void main(){
 
     int* p, x;
     x=10;
     p = &x;
 
-    printf("%d",p);
+    printf("\nEl contenido del puntero %d",*p);
+    printf("\nLa dirección de memoria almacenada por el puntero. %p",p);
+    printf("\nLa dirección de memoria de la variable. %p",&x);
+    printf("\nLa dirección de memoria del puntero. %p",&p);
+    printf("\nEl tamaño de memoria utilizado por esa variable usando la función sizeof %d",sizeof(x));
+
 
 }
